@@ -43,11 +43,9 @@
           <!--start task3-->
 
           <div class="col-md-4 col-xl-2">
-            <a href="#section_to_link"
-              ><button type="button" class="btn btn-info btn-lg mt-4">
+            <a href="#section_to_link" role="button" class="btn btn-lg btn-info mt-4" data-toggle="tooltip" title="Or call us at </br><strong>1-206-555-1234</strong>" data-html="true" data-placement="bottom">
                 Reserve Campsite
-              </button></a
-            >
+            </a>
           </div>
 
           <!--end task3-->
@@ -274,5 +272,11 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+      $(function (){
+        $('[data-toggle="tooltip"]').tooltip()
+      })
+    </script>
+
   </body>
 </html>
